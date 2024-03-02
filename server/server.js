@@ -6,7 +6,12 @@ const fs = require("node:fs");
 const app = express();
 const PORT = 4000;
 
-app.use(cors());
+const corsOptions = {
+  origin: process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://todo-mini-app.onrender.com/",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+};
+
+app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(express.json());
 
