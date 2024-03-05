@@ -1,7 +1,7 @@
 import "./App.css";
 import Todos from "./components/Todos";
 import "./index.css";
-import taskImage from "./public/todo_task.png"
+import taskImage from "./todo_task.png"
 
 function App() {
   return (
