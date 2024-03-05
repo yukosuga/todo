@@ -1,4 +1,4 @@
-const baseURL = import.meta.env.VITE_BASE_URL || "https://todo-mini-app-server.onrender.com";
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 export const getTodos = async () => {
   try {
