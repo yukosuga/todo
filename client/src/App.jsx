@@ -11,7 +11,7 @@ function App() {
         </h1>
       </header>
       <main className="text-center">
-        <img src="../../public/tasks.png" alt="slate with tasks" className="w-[350px] block mx-auto"/>
+        <img src="../../../client/public/tasks.png" alt="slate with tasks" className="w-[350px] block mx-auto"/>
         <Todos />
       </main>
     </div>
