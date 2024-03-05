@@ -1,6 +1,7 @@
 import "./App.css";
 import Todos from "./components/Todos";
 import "./index.css";
+import tasksImage from "./tasks.png";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         </h1>
       </header>
       <main className="text-center">
-        <img src="../public/tasks.png" alt="slate with tasks" className="w-[350px] block mx-auto"/>
+        <img src={tasksImage} alt="slate with tasks" className="w-[350px] block mx-auto"/>
         <Todos />
       </main>
     </div>
