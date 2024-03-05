@@ -9,7 +9,7 @@ const app = express();
 const PORT = 4000;
 
 const corsOptions = {
-  origin: process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://todo-mini-app.onrender.com/",
+  origin: "https://todo-mini-app.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
 };
 
